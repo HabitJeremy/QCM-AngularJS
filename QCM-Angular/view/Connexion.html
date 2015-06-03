@@ -1,0 +1,15 @@
+<div class="container blockpage">
+	<h1 class="titleBlockpage"><img class="imgTitle" src="ressources/connexionWhite.png"/>Connexion</h1>
+	<div class="divBlockConnexion">
+		<form class="form_connexion">
+			<img src="ressources/connexionBlue.png" alt="logo" />
+							
+			<input autofocus type="email" id="mail" name="mail" data-ng-model="UserConnexion.mail" required="required" placeholder="Identifiant" maxlength="30" />
+		
+			<input type="password" id="password" name="password" data-ng-model="UserConnexion.password" required="required" placeholder="Mot de passe" maxlength="30" />
+		
+			<input type="submit" id="connection" name="connection" value="Connexion" data-ng-click="connectUser()"/>
+			
+		</form>
+	</div>
+</div>

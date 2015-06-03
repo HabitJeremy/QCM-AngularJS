@@ -1,0 +1,16 @@
+<div class="container blockpage">
+	<h1 class="titleBlockpage"><img class="imgTitle" src="ressources/profilWhite.png"/>Mon Profil</h1>
+	<div class="divBlockProfil">
+		<form class="form_profil">
+			<img src="ressources/profilBlue.png" alt="logo" />
+							
+			<input title="Votre Nom" autofocus type="text" id="nom" data-ng-model="ProfilNom" name="nomProfil" required="required" placeholder="Nom" maxlength="30" />
+			
+			<input title="Votre prénom" type="text" id="prenom" name="prenomProfil" data-ng-model="ProfilPrenom" required="required" placeholder="Prénom" maxlength="30" />
+			
+			<input title="Votre mot de passe" type="password" id="password" name="passwordProfil" data-ng-model="UserProfil.password" required="required" placeholder="Mot de passe" maxlength="30" />
+			
+			<input type="submit" id="Profil" name="Profil" value="Modifier" data-ng-click="addUser()"/>
+		</form>
+	</div>
+</div>
