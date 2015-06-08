@@ -5,7 +5,7 @@ module.exports=function() {
 	factory.questions.refresh="all";//all|ask
 	factory.questions.update="immediate";//deffered|immediate
 	factory.server.privateToken="";
-	factory.server.restServerUrl="http://192.168.1.15/rest-qcm/";
+	factory.server.restServerUrl="http://192.168.1.11/rest-qcm/";
 	factory.server.force=false;
 	return factory;
 };

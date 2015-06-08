@@ -7,11 +7,11 @@ module.exports=function($routeProvider,$locationProvider,$httpProvider) {
 		}).
 		when('/Connexion', {
 			templateUrl: 'view/Connexion.html',
-			controller: 'ConnexionController'
+			controller:'NotConnectedController'
 		}).
 		when('/Inscription', {
 			templateUrl: 'view/Inscription.html',
-			controller: 'InscriptionController'
+			controller:'NotConnectedController'
 		}).
 		when('/Questionnaire/:id', {
 			templateUrl: 'view/Question.html',
@@ -22,7 +22,8 @@ module.exports=function($routeProvider,$locationProvider,$httpProvider) {
 			controller:'ProfilController'
 		}).
 		when('/PageInaccessible', {
-			templateUrl: 'view/PasEncoreInscrit.html'
+			templateUrl: 'view/PasEncoreInscrit.html',
+			controller:'NotConnectedController'
 		}).otherwise({
 			redirectTo: '/Connexion'
 		});

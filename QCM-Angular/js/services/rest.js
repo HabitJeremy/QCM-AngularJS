@@ -41,13 +41,13 @@ module.exports=function($http,$resource,$location,restConfig,$sce) {
 			this.clearMessages();
 		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
 		$http.defaults.headers.post["Accept"] = "application/json";
-
 		var request = $http({
 		    method: "POST",
 		    url: restConfig.server.restServerUrl+what+this.getParams(),
-		    data: response.posted,
+		    data: $.param(response.posted),
 		    headers: self.headers
 		});
+		
 		request.success(function(data, status, headers, config) {
 			self.addMessage(data.message);
 			if(angular.isUndefined(callback)){
@@ -62,10 +62,11 @@ module.exports=function($http,$resource,$location,restConfig,$sce) {
 	
 	/* --------------------- POST UTILISATEUR --------------------- */
 	this.postUser=function(response,what,callback){
+		console.log(response);
 		var request = $http({
 		    method: "POST",
 		    url: restConfig.server.restServerUrl+what+this.getParams(),
-		    data: $.param(response.posted),
+		    data: $.param(response),
 		    headers: self.headers
 		});
 		request.success(function(data, status, headers, config) {

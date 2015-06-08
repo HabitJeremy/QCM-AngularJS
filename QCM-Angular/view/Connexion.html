@@ -7,7 +7,8 @@
 			<input autofocus type="email" id="mail" name="mail" data-ng-model="UserConnexion.mail" required="required" placeholder="Identifiant" maxlength="30" />
 		
 			<input type="password" id="password" name="password" data-ng-model="UserConnexion.password" required="required" placeholder="Mot de passe" maxlength="30" />
-		
+			
+			<p data-ng-if="!authValid" class="pErrorConnexion">Identifiant ou mot de passe inccorect !</p>
 			<input type="submit" id="connection" name="connection" value="Connexion" data-ng-click="connectUser()"/>
 			
 		</form>

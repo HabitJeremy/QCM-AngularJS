@@ -1,18 +1,9 @@
-div.divBlockConnexion, div.divBlockInscription,div.divBlockProfil, div.divBlockError{
+div.divBlockConnexion, div.divBlockInscription, div.divBlockProfil{
 	background:white;
 	width:400px;
 }
 
-div.divBlockError div.titleError{
-	border-bottom:2px solid #232323;	
-}
-
-div.divBlockError div.titleError h2{
-	display:inline-block;
-	border:none;
-}
-
-div.divBlockError div.titleError img, img.imgTitle{
+img.imgTitle{
 	vertical-align:bottom;
 	margin-right:10px;
 }
@@ -37,6 +28,14 @@ h1.titleBlockpage{
   background-color: #232323;
   padding: 15px;
   border-radius: 0 45px 0 0;
+}
+
+p.pErrorConnexion{
+	  width: 90%;
+  text-align: center;
+  margin-left: 14.500px;
+  margin-right: 14.500px;
+  color: red;
 }
 
 footer{
